@@ -19,15 +19,24 @@
 -->
 <html>
     <head>
-        <meta charset="utf-8" />
+	<script language="javascript">
+		function playSong1()
+		{
+			document.getElementById("embed").innerHTML="<embed src='LIG.m4a' autostart=true loop=false volume=100 hidden=true>";
+			return true;
+		}
+	</script>
+        <!-- <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" /> --> -->
+        <title>Play Songs!</title>
     </head>
     <body>
-        <div class="app">
+		<button type="button" onclick=playSong1()>Song #1</button>
+		<button type="button" onclick=playSong1()>Song #2</button>
+        <<!-- div class="app">
             <h1>PhoneGap</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
@@ -38,6 +47,6 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-        </script>
+        </script> -->
     </body>
 </html>
